@@ -1,0 +1,8 @@
+{% block body %}
+<div class="forms well col-sm-12">
+    {{ form_start(form) }}
+        {{ form_row(form.guests) }}
+        {{ form_rest(form) }}
+    {{ form_end(form) }}
+</div>
+{% endblock %}

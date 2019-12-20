@@ -1,0 +1,20 @@
+<?php
+
+$finder = PhpCsFixer\Finder::create()
+    ->in(__DIR__)
+    ->exclude('var')
+;
+
+return PhpCsFixer\Config::create()
+    ->setRules([
+        '@PSR2' => true,
+        '@Symfony' => true,
+        '@PhpCsFixer' => true,
+        '@DoctrineAnnotation' => true,
+        'array_syntax' => [
+            'syntax' => 'short'
+        ],
+        'php_unit_test_class_requires_covers' => false,
+    ])
+    ->setFinder($finder)
+;

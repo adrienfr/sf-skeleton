@@ -1,0 +1,3 @@
+doctrine:
+    dbal:
+        url: 'mysql://root:root@192.168.99.100:3307/sf-skeleton-test'
