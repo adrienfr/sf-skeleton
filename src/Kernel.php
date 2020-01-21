@@ -19,7 +19,7 @@ class Kernel extends BaseKernel implements CompilerPassInterface
     public function process(ContainerBuilder $container)
     {
         if ('test' === $this->environment){
-            //$container->getDefinition('doctrine')->clearTag('kernel.reset');
+            $container->getDefinition('doctrine')->clearTag('kernel.reset');
         }
     }
 
